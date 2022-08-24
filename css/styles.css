@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
+:root {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+  min-height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  position: relative;
+  font-size: 16px;
+}
+
+h1, h2, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 450px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .text-content {
+  padding: 7%;
+  text-align: center;
+}
+
+.text-content .title {
+  color: #1f2f56;
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-content .subtitle {
+  color: #1f2f56;
+  margin-bottom: 25px;
+}
+
+.plan-box {
+  background: #f5f7ff;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plan-box .plan-box-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.plan-box .plan-box-left div {
+  margin-left: 20px;
+}
+
+.plan-box .plan-box-left div h5 {
+  font-weight: 900;
+  font-size: 15px;
+  color: #1f2f56;
+}
+
+.plan-box .plan-box-left div p {
+  font-size: 14px;
+  color: #7b829d;
+}
+
+.plan-box a {
+  font-weight: 900;
+  color: #1f2f56;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.plan-box a:hover {
+  text-decoration: none;
+  color: #1f2f56;
+}
+
+.proceed-btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3829e0;
+  padding: 20px 0;
+  border-radius: 12px;
+  margin: 30px 0;
+  -webkit-transition: background-color .3s ease;
+  transition: background-color .3s ease;
+}
+
+.proceed-btn:hover {
+  background-color: #7280a7;
+}
+
+.cancel-btn {
+  color: #7280a7;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.cancel-btn:hover {
+  color: #1f2f56;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .container {
+    max-width: 87%;
+  }
+  .container .text-content {
+    padding: 7%;
+  }
+  .container .text-content .title {
+    font-size: 23px;
+  }
+  .container .text-content .proceed-btn {
+    font-size: 12px;
+  }
+  .container .text-content .cancel-btn {
+    font-size: 12px;
+  }
+  .plan-box {
+    padding: 12px;
+  }
+  .plan-box a {
+    font-size: 12px;
+  }
+  .plan-box-left div {
+    margin-left: 10px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
